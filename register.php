@@ -1,28 +1,33 @@
-<?php	include('header.php'); ?>
-
+<?php
+include("header.php"); ?>
 <div class="container">
-	<?php	include('navigation.php'); ?>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3"></div>
-			<div class="col-lg-6 col-md-6">
-				<form method="post" action="action.php">
-					<h4>User Information</h4>
-					<input type="text" class="form-control" name="fname" placeholder="First Name" /><br />
-					<input type="text" class="form-control" name="lname" placeholder="Last Name" /><br />
-					<input type="email" class="form-control" name="email" placeholder="Email" /><br />
-					<input type="tel" class="form-control" name="telno" placeholder="Contact #" /><br />
-					<h4>User Credentials</h4>
-					<input type="text" class="form-control" name="uname" placeholder="Username" /><br />
-					<input type="password" class="form-control" name="pword" placeholder="Password" /><br /><br />
-					<input type="submit" class="btn btn-success" value="Register" />
-				</form>
+<?php include('navigation.php'); ?>
+	<div class="row">
+		
+		<div class="col-md-3 col-lg-3"></div>
+		<form method="post" action="user_action.php">
+			<div class="col-md-6 col-lg-4">
+				<h3>Registration Form</h3>
+				<input type="text" name="fname" class="form-control" placeholder="First Name" required /><br/>
+				<input type="text" name="lname" class="form-control" placeholder="Last Name" required /><br/>
+				<select name="gender" class="form-control" required>
+					<option value="0">-Select Gender-</option>
+					<option value="m">Male</option>
+					<option value="f">Female</option>
+				</select><br />
+				<input type="email" name="email" class="form-control" placeholder="Email Address" required/><br/>
+				<input type="tel" name="contactno" class="form-control" placeholder="Contact Number" required/><br/><br/>
+				
+				<h3>User credentials</h3>
+				<input type="text" name="userid" class="form-control" placeholder="Username" required/><br/>
+				<input type="password" name="password" class="form-control" placeholder="Password" required/><br/>
+				<input type="submit" value="Register User" class="btn btn-success" />
 			</div>
-			<div class="col-lg-3 col-md-3"></div>
-		</div>
+		</form>
+		<div class="col-md-3 col-lg-3"></div>
+		
 	</div>
 </div>
 
-
-<?php	include('footer.php'); ?>
+<?php
+include("footer.php"); ?>

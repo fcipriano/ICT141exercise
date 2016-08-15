@@ -10,7 +10,7 @@
 	<div class="collapse navbar-collapse" id="example-navbar-collapse"> 
 		<ul class="nav navbar-nav navbar-right"> 
 			<li><a href="index.php">Login</a></li>
-			<li><a href="register.php">Register</a></li>						
+			
 			<li><a href="home.php">Home</a></li> 
 			<li class="dropdown"> 
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
